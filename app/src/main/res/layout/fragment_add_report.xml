@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Shoes_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fgaddReport_tv_shoesType"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/fgaddReport_tv_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:text="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/fgaddReport_tv_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/fgaddReport_tv_shoesType" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="shoestype"
+        android:ems="10"
+        android:id="@+id/fgaddReport_et_shoestype"
+        android:layout_below="@+id/fgaddReport_tv_shoesType"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fgaddReport_tv_selectPhoto"
+        android:layout_below="@+id/fgaddReport_et_shoestype"
+        android:layout_alignStart="@+id/fgaddReport_tv_title"
+        android:layout_marginTop="39dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:id="@+id/fgaddReport_et_title"
+        android:layout_below="@+id/fgaddReport_tv_title"
+        android:layout_alignStart="@+id/fgaddReport_et_shoestype" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:id="@+id/fgaddReport_CancleBtn"
+        android:layout_alignTop="@+id/fgaddReport_OkBtn"
+        android:layout_toStartOf="@+id/fgaddReport_et_shoestype" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/fgaddReport_OkBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/fgaddReport_et_shoestype"
+        android:layout_marginBottom="77dp" />
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:id="@+id/fgaddReport_shoesPhoto"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/fgaddReport_OkBtn"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
